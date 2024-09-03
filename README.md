@@ -38,7 +38,7 @@ build `nestjs` and `phecda-server`
 npm run build
 ```
 
-and exec the output
+and exec the output file
 
 ```shell
 node dist/nestjs/express.js
