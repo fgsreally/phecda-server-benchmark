@@ -32,7 +32,7 @@ node express.js
 
 # Build
 
-build `nestjs` and `phecda-server`
+just need to build `nestjs` and `phecda-server`
 
 ```shell
 npm run build
@@ -44,4 +44,14 @@ and exec the output file
 node dist/nestjs/express.js
 node dist/phecda-server/express.js
 
+```
+
+> or use `pm2` instead 
+
+
+# stress test
+
+use [autocannon](https://www.npmjs.com/package/autocannon)
+```shell
+autocannon localhost:3000/hello
 ```

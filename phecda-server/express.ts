@@ -1,13 +1,13 @@
 console.time('cold-start');
 
 import { bind } from 'phecda-server/express'
-import { Factory } from 'phecda-server'
+import { createPhecda } from 'phecda-server'
 import express from 'express'
 import { AppController } from './app.controller.js'
 
 
 
-const data = await Factory([AppController], {
+const data = await createPhecda([AppController], {
 })
 const app = express()
 app.disable('etag');
